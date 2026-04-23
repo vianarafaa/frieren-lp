@@ -1,7 +1,13 @@
 @use 'hero';
 @use 'characters';
 @use 'watch';
+@use 'footer';
+@use 'header';
 @use 'variaveis';
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;

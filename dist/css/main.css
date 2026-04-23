@@ -9,14 +9,14 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 5em;
 }
 
 .characters {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 7rem;
 }
 .characters__list__itens {
   display: flex;
@@ -31,6 +31,9 @@
 .characters__list__itens__item:nth-child(1), .characters__list__itens__item:nth-child(3) {
   padding-top: 4rem;
 }
+.characters__list__itens__item h3 {
+  color: #fbfbfb;
+}
 .characters__list__itens__item p {
   padding-top: 1rem;
   width: 100%;
@@ -41,7 +44,8 @@
 
 .watch {
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
 }
 .watch__list {
   padding-top: 5rem;
@@ -74,6 +78,44 @@
 }
 .watch__list__itens__item button:hover {
   background-color: #dcbb7b;
+}
+
+.footer {
+  background-color: #382f41;
+  padding: 1rem;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #dcbb7b;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 0;
+  width: 100%;
+}
+.header__navbar__list__itens {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.header__navbar__list__itens__item a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all ease 0.3s;
+}
+.header__navbar__list__itens__item a:hover {
+  border-bottom: 1px solid #ddd;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {

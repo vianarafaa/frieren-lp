@@ -13,9 +13,21 @@
         <link rel="stylesheet" href="./dist/css/main.css" />
     </head>
     <body>
+        <header class="header">
+            <nav class="header__navbar">
+                <div class="header__navbar__list">
+                    <ul class="header__navbar__list__itens">
+                        <li class="header__navbar__list__itens__item"><a class="text" href="#sinopse">Sinopse e Trailer</a></li>
+                        <li class="header__navbar__list__itens__item"><a class="text" href="#characters">Personagens Principais</a></li>
+                        <li class="header__navbar__list__itens__item"><a class="text" href="#watch">Onde Assistir</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
         <section class="hero">
             <div class="hero__background"></div>
-            <div class="hero__sinopse container">
+            <div class="hero__sinopse container" id="sinopse">
                 <h2 class="title">Sinopse e Trailer</h2>
                 <p class="text">
                     Em Frieren e a Jornada para o Além, uma elfa que pode viver por mais de mil anos reencontra seus antigos parceiros de
@@ -37,7 +49,7 @@
                 ></iframe>
             </div>
         </section>
-        <section class="characters container">
+        <section class="characters container" id="characters">
             <h2 class="title">Personagens Principais</h2>
             <div class="characters__list">
                 <ul class="characters__list__itens">
@@ -71,7 +83,7 @@
                 </ul>
             </div>
         </section>
-        <section class="watch container">
+        <section class="watch container" id="watch">
             <h2 class="title">Onde Assistir</h2>
             <div class="watch__list">
                 <ul class="watch__list__itens">
@@ -114,5 +126,8 @@
                 </ul>
             </div>
         </section>
+        <footer class="footer">
+            <p class="text--big">Desenvolvido por <a href="https://www.linkedin.com/in/vianarafaa/">Rafael Viana</a></p>
+        </footer>
     </body>
 </html>
