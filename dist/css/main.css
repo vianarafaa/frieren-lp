@@ -14,6 +14,7 @@
   }
   .hero__background img {
     width: 100%;
+    display: block;
   }
 }
 @media (max-width: 768px) {
@@ -96,11 +97,11 @@
     max-width: 280px;
   }
 }
-.characters__list__itens__item:nth-child(1), .characters__list__itens__item:nth-child(3) {
+.characters__list__itens__item:nth-child(2), .characters__list__itens__item:nth-child(4) {
   padding-top: 4rem;
 }
 @media (max-width: 768px) {
-  .characters__list__itens__item:nth-child(1), .characters__list__itens__item:nth-child(3) {
+  .characters__list__itens__item:nth-child(2), .characters__list__itens__item:nth-child(4) {
     padding-top: unset;
   }
 }
