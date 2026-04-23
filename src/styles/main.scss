@@ -1,0 +1,47 @@
+@use 'hero';
+@use 'characters';
+@use 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+@mixin title($fontSize: 3rem) {
+    font-size: $fontSize;
+    color: variaveis.$corDoTitulo;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+@mixin text($fontSize: 1.5rem) {
+    font-size: $fontSize;
+    color: variaveis.$corDoTexto;
+    font-family: 'Playfair', serif;
+}
+
+body {
+    background-color: #41374b;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.title {
+    @include title();
+}
+
+.text {
+    @include text();
+}
+
+.text--big {
+    @include text(2rem);
+}
+
+.text--small {
+    @include text(1rem);
+}
