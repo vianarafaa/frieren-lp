@@ -1,0 +1,16 @@
+.hero {
+    &__background {
+        width: 100%;
+        height: 80vh;
+        background-image: url(../../src/images/frieren-background.png);
+        background-size: cover;
+    }
+
+    &__sinopse {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+}
