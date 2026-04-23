@@ -6,20 +6,60 @@
     align-items: center;
     padding-top: 7rem;
 
+    @media (max-width: 768px) {
+        padding-top: 4rem;
+    }
+
     &__list {
         &__itens {
             display: flex;
             gap: 5rem;
             padding-top: 5rem;
 
+            @media (max-width: 768px) {
+                padding-top: 3rem;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .frieren__mobile {
+                display: none;
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+
+            .frieren__desktop {
+                display: block;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+
             &__item {
                 text-align: center;
                 max-width: 340px;
                 transition: all ease 0.5s;
 
+                @media (max-width: 768px) {
+                    max-width: 280px;
+
+                    img {
+                        max-width: 280px;
+                    }
+                }
+
                 &:nth-child(1),
                 &:nth-child(3) {
                     padding-top: 4rem;
+
+                    @media (max-width: 768px) {
+                        padding-top: unset;
+                    }
                 }
 
                 h3 {

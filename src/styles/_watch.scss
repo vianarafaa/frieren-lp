@@ -3,6 +3,10 @@
     padding-top: 7rem;
     padding-bottom: 3rem;
 
+    @media (max-width: 768px) {
+        padding-top: 5rem;
+    }
+
     &__list {
         padding-top: 5rem;
         &__itens {
@@ -10,15 +14,31 @@
             justify-content: center;
             gap: 10rem;
 
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 1rem;
+            }
+
             &__item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 2rem;
 
+                @media (max-width: 768px) {
+                    gap: 0.5rem;
+                }
+
                 img {
                     max-width: 100px;
                     max-height: 100px;
+
+                    @media (max-width: 768px) {
+                        max-width: 80px;
+                        max-height: 80px;
+                    }
                 }
 
                 button {

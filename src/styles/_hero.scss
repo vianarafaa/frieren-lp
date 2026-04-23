@@ -4,13 +4,43 @@
         height: 80vh;
         background-image: url(../../src/images/frieren-background.png);
         background-size: cover;
+
+        img {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            background-image: none;
+            height: unset;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
+    iframe {
+        @media (max-width: 768px) {
+            width: 326px;
+            height: 200px;
+        }
+    }
     &__sinopse {
         display: flex;
         text-align: center;
         flex-direction: column;
         align-items: center;
         gap: 5em;
+
+        @media (max-width: 768px) {
+            gap: 3rem;
+            padding-top: 2rem;
+        }
+
+        p {
+            @media (max-width: 768px) {
+                padding: 0 2rem;
+            }
+        }
     }
 }

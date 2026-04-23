@@ -35,20 +35,39 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        max-width: 620px;
+    }
 }
 
 .title {
     @include title();
+
+    @media (max-width: 768px) {
+        @include title(2rem);
+    }
 }
 
 .text {
     @include text();
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
 }
 
 .text--big {
     @include text(2rem);
+    @media (max-width: 768px) {
+        @include text(1.275rem);
+    }
 }
 
 .text--small {
     @include text(1rem);
+
+    @media (max-width: 768px) {
+        @include text(12px);
+    }
 }
