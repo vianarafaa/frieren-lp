@@ -1,0 +1,117 @@
+.hero__background {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../../src/images/frieren-background.png);
+  background-size: cover;
+}
+.hero__sinopse {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+.characters__list__itens {
+  display: flex;
+  gap: 5rem;
+  padding-top: 5rem;
+}
+.characters__list__itens__item {
+  text-align: center;
+  max-width: 340px;
+  transition: all ease 0.5s;
+}
+.characters__list__itens__item:nth-child(1), .characters__list__itens__item:nth-child(3) {
+  padding-top: 4rem;
+}
+.characters__list__itens__item p {
+  padding-top: 1rem;
+  width: 100%;
+}
+.characters__list__itens__item:hover {
+  transform: scale(1.05);
+}
+
+.watch {
+  text-align: center;
+  padding-top: 10rem;
+}
+.watch__list {
+  padding-top: 5rem;
+}
+.watch__list__itens {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+.watch__list__itens__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.watch__list__itens__item img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.watch__list__itens__item button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: solid #dcbb7b 1px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.watch__list__itens__item button a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.watch__list__itens__item button:hover {
+  background-color: #dcbb7b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #41374b;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  color: #fbfbfb;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.text {
+  font-size: 1.5rem;
+  color: #ddd;
+  font-family: "Playfair", serif;
+}
+
+.text--big {
+  font-size: 2rem;
+  color: #ddd;
+  font-family: "Playfair", serif;
+}
+
+.text--small {
+  font-size: 1rem;
+  color: #ddd;
+  font-family: "Playfair", serif;
+}

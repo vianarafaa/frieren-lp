@@ -1,0 +1,42 @@
+.watch {
+    text-align: center;
+    padding-top: 10rem;
+
+    &__list {
+        padding-top: 5rem;
+        &__itens {
+            display: flex;
+            justify-content: center;
+            gap: 10rem;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+
+                img {
+                    max-width: 100px;
+                    max-height: 100px;
+                }
+
+                button {
+                    padding: 0.5rem 1rem;
+                    background-color: transparent;
+                    border: solid #dcbb7b 1px;
+                    transition: all ease 0.5s;
+                    cursor: pointer;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1rem;
+                    }
+
+                    &:hover {
+                        background-color: #dcbb7b;
+                    }
+                }
+            }
+        }
+    }
+}
